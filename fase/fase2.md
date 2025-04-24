@@ -131,3 +131,32 @@ la certezza che questa variabile non venva modificata nel tempo per errore.
 Dichiarare una variabile come `var` esplicitamente soltanto se una variabile deve cambiare nel tempo.
 
 Avere una variabile non mutabile dichiarata esplicitamente permete di evitare modifiche involotarie ai dati.
+
+
+ ## Operatori
+
+ Un classico della programmazione. Nulla di speciale. A seguire una carrellata degli operatori più usati.
+
+- Aritmetici: +, -, *, /, %
+- Confronto: ==, !=, <, >, <=, >=
+- Operatori logici: and, or, !
+- Operatori di Assegnamento (=, +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=)
+
+Operatori meno utilizzati (da me) sono gli operatori di **Bitwise**.
+
+- `&` (AND bit a bit): Esegue un AND bit per bit tra i due operandi.
+- `|` (OR bit a bit): Esegue un OR bit per bit tra i due operandi.
+- `^` (XOR bit a bit): Esegue un XOR (OR esclusivo) bit per bit tra i due operandi.
+- `~` (NOT bit a bit): Inverte i bit dell'operando (unario).
+- `<<` (Scorrimento a sinistra): Sposta i bit del primo operando a sinistra per il numero di posizioni specificato dal secondo operando.
+- `>>` (Scorrimento a destra): Sposta i bit del primo operando a destra per il numero di posizioni specificato dal secondo operando.
+
+A cosa servono gli operatori **Bitwise**?
+
+- Manipolazione di Flag (Set di Bit)
+- Operazioni a Basso Livello e con Hardware
+- Grafica e Manipolazione di Immagini
+- Compressione e Decompressione Dati
+- Crittografia
+
+

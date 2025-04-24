@@ -27,12 +27,12 @@ notes:
       - [X] Inferenza di tipo.
       - [X] Mutabilità e immutabilità.
 
-    - [ ] Operatori
-      - [ ] Aritmetici (+, -, *, /, %).
-      - [ ] Di confronto (==, !=, <, >, <=, >=).
-      - [ ] Logici (and, or, !).
-      - [ ] Bitwise (&, |, ^, ~, <<, >>).
-      - [ ] Assegnamento (=, +=, -=, ecc.).
+    - [X] Operatori
+      - [X] Aritmetici (+, -, *, /, %).
+      - [X] Di confronto (==, !=, <, >, <=, >=).
+      - [X] Logici (and, or, !).
+      - [X] Bitwise (&, |, ^, ~, <<, >>).
+      - [X] Assegnamento (=, +=, -=, ecc.).
 
     - [ ] Strutture di Controllo del Flusso
       - [ ] if, else, else if.

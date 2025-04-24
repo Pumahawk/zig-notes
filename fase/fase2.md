@@ -102,3 +102,32 @@ dati immutabili.
 Importante comprendere che zig non ha una rappresentazione dedicata delle stringhe come in altri linguaggi. Per operazioni più elaborate potrebbe essere necessario
 gestire direttamente la memoria.
 
+
+## Variabili e costanti
+
+In zig per dichiarare le variabili e costanti si utilizzando le parole chiave `var` e `const`.
+
+- `var` sono contenitori il cui valore può cambiare (mutato) durante l'esecuzione del programma.
+- `const` sono contenitori il cui valore non può cambiare.
+
+## Inferenza di tipo
+
+Il programma può in automatico capire il valore delle variabili durante la loro creazione. Per questo non è
+necessario specificare sempre il tipo. Lo si può per rendeere il programma più esplicito.
+
+```
+var num1: u32 = 1_000;
+const num2: u32 = 1_000;
+
+const num3 = 100; // Inferenza di tipo.
+```
+
+## Mutabilità e immutabilità
+
+La mutabilità e la immutabilità dei dati si gestisce definiendo le variabili con `const` o `var`.
+E' una buona convenzione cercare di utilizzare const quando si dichiara una variabile cosi da avere
+la certezza che questa variabile non venva modificata nel tempo per errore.
+
+Dichiarare una variabile come `var` esplicitamente soltanto se una variabile deve cambiare nel tempo.
+
+Avere una variabile non mutabile dichiarata esplicitamente permete di evitare modifiche involotarie ai dati.

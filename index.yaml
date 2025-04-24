@@ -22,10 +22,10 @@ notes:
       - [X] Array e Slices ([n]T, []T): Differenza tra array a dimensione fissa e slices a dimensione dinamica.
       - [X] Stringhe ([]const u8): Le stringhe in Zig sono tipicamente rappresentate come slices di byte UTF-8 immutabili.
 
-    - [ ] Variabili e Costanti
-      - [ ] Dichiarazione di variabili con var e costanti con const.
-      - [ ] Inferenza di tipo.
-      - [ ] Mutabilità e immutabilità.
+    - [X] Variabili e Costanti
+      - [X] Dichiarazione di variabili con var e costanti con const.
+      - [X] Inferenza di tipo.
+      - [X] Mutabilità e immutabilità.
 
     - [ ] Operatori
       - [ ] Aritmetici (+, -, *, /, %).

@@ -3,9 +3,9 @@ notes:
   title: "Imparare zig 1 - Installazione di Zig"
   tags: [ "status:done" ]
   note: |
-    - [ ] Scarica l'ultima versione stabile di Zig dal sito ufficiale (https://ziglang.org/download/).
-    - [ ] Segui le istruzioni specifiche per il tuo sistema operativo per l'installazione e l'aggiunta di Zig al tuo PATH.
-    - [ ] Verifica l'installazione aprendo il terminale e eseguendo zig version.
+    - [X] Scarica l'ultima versione stabile di Zig dal sito ufficiale (https://ziglang.org/download/).
+    - [X] Segui le istruzioni specifiche per il tuo sistema operativo per l'installazione e l'aggiunta di Zig al tuo PATH.
+    - [X] Verifica l'installazione aprendo il terminale e eseguendo zig version.
 
 - id: LEARN-FASE-2
   title: "Imparare zig 2 - Fondamentali del Linguaggio"

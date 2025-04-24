@@ -1,7 +1,7 @@
 ---
 id: LEARN-FASE-2-DETAILS
 title: "Imparare zig 2 - Fondamentali del Linguaggio - Details"
-tags: [ "status:todo" ]
+tags: [ "status:todo", "working" ]
 ---
 
 # Imparare zig 2 - Fondamentali del Linguaggio

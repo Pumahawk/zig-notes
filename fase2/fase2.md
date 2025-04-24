@@ -38,3 +38,67 @@ Questi tipo possono rappresentare soltanto numeri positivi, la **u** sta per **u
 - **u64**: Intero unsigned a 64 bit.
 - **u128**: Intero unsigned a 128 bit.
 - **usize**: Intero unsigned con la **stessa dimensione di un puntatore**. Usato spesso per rappresentare dimensioni e indici.
+
+### Floating point
+
+Questi tipi possono rappresenare numeri con la la parte frazionaria.
+
+- **f32**: Floating-point a 32 bit (precisione singola).
+- **f64**: Floating-point a 64 bit (doppia precisione).
+
+## Booleani
+
+Possono rappresentare soltanto 2 valori. `true`, `false`.
+
+## Caratteri
+
+I caratteri sono di tipo **u8** questo perché zig adotta la codifica **UTF-8**. I caratteri **Unicode** possono essere rappresentati da uno o più byte.
+
+```zig
+const c1: u8 = 'A'; // num value: 65
+const c2: u8 = '€'; // Invalid operation
+```
+
+**Output**:
+
+```
+code/fase2-chars.zig:6:20: error: type 'u8' cannot represent integer value '8364'
+    const c2: u8 = '€';
+```
+
+Per lavorare con stringhe di testo più completo si utilizzano slices di byte (`[]const u8`)
+
+## `void`
+
+Utilizzato per rappresentare l'assenza di valore. Utilizzato per rappresentare il ritorno di una funzione che non restituisce un valore segnificativo.
+
+## `null` e tipi opzionali `?T`
+
+Zig gestisce in modo sicuro il valore null tramite l'optional.
+
+- `null` può essere assegnato ad un tipo di puntatore o ad un valore opzionale.
+- Tipi opzionali (`?T`): Aggiungendo `?` davanti ad un tipo che non sia un puntatore o un valore opzionale, si crea un valore nuovo che può essere di tipo
+        T oppure opzionale.
+
+è possibile fare l'unwrap del valore nullo all'interno dell'if
+
+```
+if (var_name) |non_null_var_name| ... else ...
+```
+
+## Array e Slices
+
+- Array (`[n]T`): è una sequenza di dimensione **fissa** di elementi dello **stesso tipo** dove **n** è una dimensione **costante in fase di compilazione**.
+- Slice (`[]T`): è una **vista dinameica** su una sequenza di elementi (che potrebbe essere un array o un altro slice.
+
+Uno slice **non** possiede i dati sottostanti ma **contiene un puntatore ad un elemento e una lunghezza**.
+Siccome la dimenzione non fa parte del tipo, gli slice sono più flessibili.
+
+## Stringhe
+
+Le stringhe normalmente sono rappresentate come slice di byte. (`const[] u8`) che contengono dati codificati in UTF-8. La parte const indica che contiene
+dati immutabili.
+
+Importante comprendere che zig non ha una rappresentazione dedicata delle stringhe come in altri linguaggi. Per operazioni più elaborate potrebbe essere necessario
+gestire direttamente la memoria.
+

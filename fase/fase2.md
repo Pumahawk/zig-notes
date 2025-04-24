@@ -159,4 +159,33 @@ A cosa servono gli operatori **Bitwise**?
 - Compressione e Decompressione Dati
 - Crittografia
 
+## Strutture di controllo del Flusso
+
+### **if**, **else**, **else if**
+
+```
+if (condizione) { ... }
+if (condizione) { ... } else { ... }
+if (condizione) { ... } else if (condizione) { ... }
+```
+
+In oltre permette di fare un unwrapping del valore optional.
+
+```
+if (var_optional) |var_se_presente| { ... }
+```
+
+L' `if` può essere utilizzato anche durante l'assegnazione.
+
+### **while** e **for** loop (con iteratori)
+
+TODO...
+
+### **switch** statement
+
+TODO...
+
+### **break** e **continue**
+
+TODO...
 

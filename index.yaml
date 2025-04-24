@@ -1,0 +1,97 @@
+notes:
+- id: LEARN-FASE-1
+  title: "Imparare zig 1 - Installazione di Zig"
+  tags: [ "status:done" ]
+  note: |
+    - [ ] Scarica l'ultima versione stabile di Zig dal sito ufficiale (https://ziglang.org/download/).
+    - [ ] Segui le istruzioni specifiche per il tuo sistema operativo per l'installazione e l'aggiunta di Zig al tuo PATH.
+    - [ ] Verifica l'installazione aprendo il terminale e eseguendo zig version.
+
+- id: LEARN-FASE-2
+  title: "Imparare zig 2 - Fondamentali del Linguaggio"
+  tags: [ "status:todo", "next" ]
+  note: |
+    - [X] Hello, World! e Struttura di un Programma Zig
+
+    - [ ] Tipi di Dati Fondamentali
+      - [ ] Numeri: Interi (signed e unsigned: i8, u8, i32, u32, usize, ecc.), Floating-point (f32, f64).
+      - [ ] Booleani: bool (true, false).
+      - [ ] Caratteri: u8 (Zig tratta i caratteri come semplici byte UTF-8 per impostazione predefinita).
+      - [ ] void: Rappresenta l'assenza di un valore.
+      - [ ] null e Tipi Opzionali (?T): Come gestire valori potenzialmente nulli in modo sicuro.
+      - [ ] Array e Slices ([n]T, []T): Differenza tra array a dimensione fissa e slices a dimensione dinamica.
+      - [ ] Stringhe ([]const u8): Le stringhe in Zig sono tipicamente rappresentate come slices di byte UTF-8 immutabili.
+
+    - [ ] Variabili e Costanti
+      - [ ] Dichiarazione di variabili con var e costanti con const.
+      - [ ] Inferenza di tipo.
+      - [ ] Mutabilità e immutabilità.
+
+    - [ ] Operatori
+      - [ ] Aritmetici (+, -, *, /, %).
+      - [ ] Di confronto (==, !=, <, >, <=, >=).
+      - [ ] Logici (and, or, !).
+      - [ ] Bitwise (&, |, ^, ~, <<, >>).
+      - [ ] Assegnamento (=, +=, -=, ecc.).
+
+    - [ ] Strutture di Controllo del Flusso
+      - [ ] if, else, else if.
+      - [ ] while e for loop (con iteratori).
+      - [ ] switch statement.
+      - [ ] break e continue.
+
+- id: LEARN-FASE-3
+  title: "Imparare zig 3 - Tipi di Dati Strutturati e Gestione della Memoria"
+  tags: [ "status:todo" ]
+  note: |
+    - [ ] Struct
+      - [ ] Definizione di strutture dati con campi.
+      - [ ] Creazione di istanze di struct.
+      - [ ] Accesso ai campi.
+      - [ ] Metodi (funzioni associate a una struct).
+
+    - [ ] Union (union e union(enum)):
+      - [ ] Come e quando usare le union per rappresentare dati che possono avere tipi diversi.
+      - [ ] L'importanza di tenere traccia del tipo attivo in una union semplice.
+      - [ ] La sicurezza e i vantaggi di union(enum) (tagged union).
+
+    - [ ] Enum (enum):
+      - [ ] Definizione di tipi enumerativi.
+      - [ ] Enum con valori associati (come tag in union(enum)).
+
+    - [ ] Puntatori (*T, [*]T, [n]*T):
+      - [ ] Comprendere il concetto di puntatori e indirizzi di memoria.
+      - [ ] Dereferenziazione (.*).
+      - [ ] Puntatori a singoli valori, array e slices.
+      - [ ] Il significato di const con i puntatori.
+
+    - [ ] Gestione della Memoria:
+      - [ ] Allocatori (std.mem.Allocator): L'importanza dell'allocazione esplicita della memoria in Zig.
+      - [ ] std.heap.GeneralPurposeAllocator e std.heap.ArenaAllocator: Esempi di allocatori forniti dalla libreria standard.
+      - [ ] defer: Come garantire la deallocazione della memoria.
+      - [ ] Errori di memoria comuni (use-after-free, double-free) e come evitarli in Zig.
+
+- id: LEARN-FASE-4
+  title: "Imparare zig 4 - Error Handling e Concurrency (Introduzione)"
+  tags: [ "status:todo" ]
+  note: |
+    - [ ] Error Sets (error):
+      - [ ] Come definire e utilizzare error sets per gestire gli errori in modo tipizzato.
+      - [ ] La sintassi ! per indicare funzioni che possono restituire errori.
+      - [ ] L'operatore try per propagare gli errori.
+      - [ ] Gestire gli errori con catch.
+
+    - [ ] Concurrency (Introduzione):
+      - [ ] Il concetto di goroutine-like concurrency in Zig (async e await).
+      - [ ] Nozioni di base su come eseguire codice concorrente (potrebbe essere un argomento più avanzato per dopo).
+
+- id: LEARN-FASE-5
+  title: "Imparare zig 5 - Tipi di Dati Strutturati e Gestione della Memoria"
+  tags: [ "status:todo" ]
+  note: |
+    - [ ] std.debug: Stampa di informazioni a scopo di debug.
+    - [ ] std.mem: Utilità per la gestione della memoria.
+    - [ ] std.io: Input/output di base (lettura da file, scrittura su file, standard input/output).
+    - [ ] std.ArrayList e std.StringHashMap: Strutture dati dinamiche (come quelle usate nel tuo esempio di parser).
+    - [ ] std.fmt: Formattazione di stringhe.
+    - [ ] Esplora altri moduli rilevanti della libreria standard man mano che ne hai bisogno.

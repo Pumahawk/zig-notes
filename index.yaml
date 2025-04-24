@@ -9,18 +9,18 @@ notes:
 
 - id: LEARN-FASE-2
   title: "Imparare zig 2 - Fondamentali del Linguaggio"
-  tags: [ "status:todo", "next" ]
+  tags: [ "status:todo", "working", "next" ]
   note: |
     - [X] Hello, World! e Struttura di un Programma Zig
 
-    - [ ] Tipi di Dati Fondamentali
-      - [ ] Numeri: Interi (signed e unsigned: i8, u8, i32, u32, usize, ecc.), Floating-point (f32, f64).
-      - [ ] Booleani: bool (true, false).
-      - [ ] Caratteri: u8 (Zig tratta i caratteri come semplici byte UTF-8 per impostazione predefinita).
-      - [ ] void: Rappresenta l'assenza di un valore.
-      - [ ] null e Tipi Opzionali (?T): Come gestire valori potenzialmente nulli in modo sicuro.
-      - [ ] Array e Slices ([n]T, []T): Differenza tra array a dimensione fissa e slices a dimensione dinamica.
-      - [ ] Stringhe ([]const u8): Le stringhe in Zig sono tipicamente rappresentate come slices di byte UTF-8 immutabili.
+    - [X] Tipi di Dati Fondamentali
+      - [X] Numeri: Interi (signed e unsigned: i8, u8, i32, u32, usize, ecc.), Floating-point (f32, f64).
+      - [X] Booleani: bool (true, false).
+      - [X] Caratteri: u8 (Zig tratta i caratteri come semplici byte UTF-8 per impostazione predefinita).
+      - [X] void: Rappresenta l'assenza di un valore.
+      - [X] null e Tipi Opzionali (?T): Come gestire valori potenzialmente nulli in modo sicuro.
+      - [X] Array e Slices ([n]T, []T): Differenza tra array a dimensione fissa e slices a dimensione dinamica.
+      - [X] Stringhe ([]const u8): Le stringhe in Zig sono tipicamente rappresentate come slices di byte UTF-8 immutabili.
 
     - [ ] Variabili e Costanti
       - [ ] Dichiarazione di variabili con var e costanti con const.

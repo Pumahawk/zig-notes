@@ -3,6 +3,7 @@ notes:
   title: "Imparare zig 1 - Installazione di Zig"
   tags: [ "status:done" ]
   note: |
+
     - [X] Scarica l'ultima versione stabile di Zig dal sito ufficiale (https://ziglang.org/download/).
     - [X] Segui le istruzioni specifiche per il tuo sistema operativo per l'installazione e l'aggiunta di Zig al tuo PATH.
     - [X] Verifica l'installazione aprendo il terminale e eseguendo zig version.
@@ -11,6 +12,7 @@ notes:
   title: "Imparare zig 2 - Fondamentali del Linguaggio"
   tags: [ "status:todo", "working", "next" ]
   note: |
+
     - [X] Hello, World! e Struttura di un Programma Zig
 
     - [X] Tipi di Dati Fondamentali
@@ -43,6 +45,7 @@ notes:
   title: "Imparare zig 3 - Tipi di Dati Strutturati e Gestione della Memoria"
   tags: [ "status:todo" ]
   note: |
+
     - [ ] Struct
       - [ ] Definizione di strutture dati con campi.
       - [ ] Creazione di istanze di struct.
@@ -74,6 +77,7 @@ notes:
   title: "Imparare zig 4 - Error Handling e Concurrency (Introduzione)"
   tags: [ "status:todo" ]
   note: |
+
     - [ ] Error Sets (error):
       - [ ] Come definire e utilizzare error sets per gestire gli errori in modo tipizzato.
       - [ ] La sintassi ! per indicare funzioni che possono restituire errori.
@@ -88,6 +92,7 @@ notes:
   title: "Imparare zig 5 - Tipi di Dati Strutturati e Gestione della Memoria"
   tags: [ "status:todo" ]
   note: |
+
     - [ ] std.debug: Stampa di informazioni a scopo di debug.
     - [ ] std.mem: Utilità per la gestione della memoria.
     - [ ] std.io: Input/output di base (lettura da file, scrittura su file, standard input/output).

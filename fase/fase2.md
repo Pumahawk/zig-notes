@@ -179,13 +179,60 @@ L' `if` può essere utilizzato anche durante l'assegnazione.
 
 ### **while** e **for** loop (con iteratori)
 
-TODO...
+Il **while** loop è la forma di controllo più base. Esegue una porzione di codice finche la codizione è vera.
+
+```
+while (codition) { ... }
+```
+
+Il for **loop** è più potente quando si tratta di operare su sequenze di dati.
+
+Iteratori:
+
+Un **iteratore**, spesso usato con il for, è un modo per avere accesso ad una sequenza di dati.
+
+L'**iteratore** fornisce:
+
+- Ottenere l'elemento corrente.
+- Avanzare all'elemento successivo.
+- Indicare quando non ci sono più elementi.
+
+Esempio di for loop con **iteratore implicito**.
+
+```
+const numbers: [_]u32 = .{1, 2, 3}
+for (numbers) |number| { ... }
+for (numbers) |number, index| { ... }
+
+// Iterazione su range
+for (1..5) |i| { ... } // 5 escluso
+for (1..=5) |i| { ... } // 5 incluso
+```
+
+L'iterazione su range va a definire una variabile |i|.
+
+Per elaborazioni più complesse si possono usare **iteratori espliciti**.
+
+break e continue possono essere usati per manipolare l'interazione del ciclo.
+
+- **break** interrompe forzatamente il ciclo.
+- **continue** passa direttamente all'iterazione successiva.
 
 ### **switch** statement
 
-TODO...
+Lo switch in zig permette di eseguire un blocco di codice tra diversi a seconda di una determinata codizione.
 
-### **break** e **continue**
+In zig non c'è il Fallthrough implicito. Verrà eseguito solo un case dello switch.
 
-TODO...
+Lo switch deve gestire tutte le condizioni (usando l'else se serve)
 
+Lo switch può essere usato anche durante l'assegnazione.
+
+Con lo switch si può gestire l'optional.
+
+```
+switch(codizione) {
+  value => { ... },
+  else => { ... }
+}
+```

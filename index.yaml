@@ -34,11 +34,10 @@ notes:
       - [X] Bitwise (&, |, ^, ~, <<, >>).
       - [X] Assegnamento (=, +=, -=, ecc.).
 
-    - [ ] Strutture di Controllo del Flusso
-      - [ ] if, else, else if.
-      - [ ] while e for loop (con iteratori).
-      - [ ] switch statement.
-      - [ ] break e continue.
+    - [X] Strutture di Controllo del Flusso
+      - [X] if, else, else if.
+      - [X] while e for loop (con iteratori).
+      - [X] switch statement.
 
 - id: LEARN-FASE-3
   title: "Imparare zig 3 - Tipi di Dati Strutturati e Gestione della Memoria"
